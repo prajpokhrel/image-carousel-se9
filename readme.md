@@ -1,7 +1,8 @@
 #Image Slider
 Automatic Image Slider with Hold Times.
 
-## Using this Image Carousel
+## To Use this Image Carousel
+Please add following HTML code:
 ```$xslt
 <div class="main-container">
 
