@@ -3,7 +3,7 @@ Automatic Image Slider with Hold Times.
 
 ## To Use this Image Carousel
 Please add following HTML code:
-```$xslt
+```html
 <div class="main-container">
 
     <div class="slider-container" id="slider-container1">
