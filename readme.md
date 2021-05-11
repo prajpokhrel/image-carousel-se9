@@ -1,4 +1,5 @@
-#Image Slider
+# Image Slider
+
 Automatic Image Slider with Hold Times.
 
 ## To Use this Image Carousel
