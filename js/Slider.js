@@ -1,7 +1,6 @@
 function Slider(sliderId, sliderImagesContainer, transitionDuration, holdDuration) {
     this.sliderId = sliderId;
     this.sliderImagesContainer = sliderImagesContainer;
-    this.width = 800;
     this.counter = 0;
     this.transitionDuration = transitionDuration;
     this.holdDuration = holdDuration;
@@ -36,7 +35,6 @@ function Slider(sliderId, sliderImagesContainer, transitionDuration, holdDuratio
             dot.addEventListener('click', function () {
                 slideContainer.style.transition = `transform ${this.transitionDuration/1000}s ease-in-out`;
                 slideContainer.style.transform = 'translateX(' + (-size * index) + 'px';
-                clearInterval(this.interval);
             }.bind(this));
         });
     }
@@ -136,7 +134,6 @@ function Slider(sliderId, sliderImagesContainer, transitionDuration, holdDuratio
         }
         slideContainer.style.transition = `transform ${this.transitionDuration/1000}s ease-in-out`;
         slideContainer.style.transform = 'translateX(' + (-size * this.counter) + 'px';
-
         this.setActiveStatus();
     }
 
@@ -149,6 +146,7 @@ function Slider(sliderId, sliderImagesContainer, transitionDuration, holdDuratio
         slideContainer.style.transition = `transform ${this.transitionDuration/1000}s ease-in-out`;
         this.counter--;
         slideContainer.style.transform = 'translateX(' + (-size * this.counter) + 'px';
+        this.setActiveStatus();
     }
 
     this.createSlider = function() {
